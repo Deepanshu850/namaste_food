@@ -16,17 +16,15 @@
 
 #### npm
 
- -.Install parcel using npm (npm i -D parcel)
- -.-D stand for dev dependency install in such a way support development mode
- -. ^ caret -- for minor upgrade automatically
- -. ~ tilde -- for major upgrage automatically
- -. package_lock  keep the record of extact package is install
- -. package_lock keeps the has of excact version of all the dependency
- -.node_module have all the code of dependency
- -.Pacel also have dependency .those dependency also have their dependency
- -.how many package.json in our project all pakages have package.json 
- -. these is called transitive dependency
+* Install parcel using npm (npm i -D parcel)
+* D stand for dev dependency install in such a way support development mode
+* ^ caret -- for minor upgrade automatically
+* ~ tilde -- for major upgrage automatically
+* package_lock  keep the record of extact package is install
+* package_lock keeps the has of excact version of all the dependency
+* node_module have all the code of dependency
+* Pacel also have dependency .those dependency also have their dependency
+* how many package.json in our project all pakages have package.json
+* these is called transitive dependency
 
 #### Job of bundler (parcel)--parcel is a beast
-
--
