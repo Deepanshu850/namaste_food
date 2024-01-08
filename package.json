@@ -1,0 +1,22 @@
+{
+  "name": "namaste_food",
+  "version": "1.0.0",
+  "description": "namaste_react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Deepanshu850/namaste_food.git)"
+  },
+  "keywords": [
+    "react",
+    "deepanshu"
+  ],
+  "author": "deepanshu",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
