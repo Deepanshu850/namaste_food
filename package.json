@@ -2,7 +2,7 @@
   "name": "namaste_food",
   "version": "1.0.0",
   "description": "namaste_react",
-  
+  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
