@@ -1,4 +1,4 @@
-# React Notes
+# React Notes video 1 and 2
 
 ## React.createElement
 
@@ -26,5 +26,25 @@
 * Pacel also have dependency .those dependency also have their dependency
 * how many package.json in our project all pakages have package.json
 * these is called transitive dependency
+* thing we can regenerate not put on git like nodemodule
+*cdn link is not a good way to install react due to network cost
 
-#### Job of bundler (parcel)--parcel is a beast
+## Job of Parcel (parcel)--parcel is a beast
+
+* npx parcel index.html
+
+* Dev Build
+* Local Server
+* Hmr = hot module replacement
+* file watching algo - written in c++
+* caching- faster build
+* Image optimization
+* minification
+* Bundling
+* Compressing
+* consistent hasing
+* code splitting
+* differential buldling- support older browser differnt bundle for diffent brownser
+* Error handling
+* tree shaking - remove unused code
+* Different dev and prod build  --npm parcel build index.html
