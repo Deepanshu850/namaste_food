@@ -4,7 +4,10 @@
   "description": "namaste_react",
   "main": "App.js",
   "scripts": {
+    "chaluhoja": "parcel index.html",
+    "packhoja" : "parcel build index.html",
     "test": "jest"
+
   },
   "repository": {
     "type": "git",
