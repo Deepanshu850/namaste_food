@@ -33,9 +33,10 @@ const Title = () =>
 // functional bases componenet
 
 const HeadingComponent = () => {//putting  one component into another is called comonents compostion 
+    const text = "i am in love with you reatu"
     return (<>
         <Title />
-        <h1> Namaste react  heading componenet function  </h1></>
+        <h1> Namaste react  heading componenet function {text}</h1></>
     )
 }
 
