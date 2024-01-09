@@ -32,7 +32,7 @@ const Title = () =>
 // Class based component
 // functional bases componenet
 
-const HeadingComponent = () => {
+const HeadingComponent = () => {//putting  one component into another is called comonents compostion 
     return (<>
         <Title />
         <h1> Namaste react  heading componenet function  </h1></>
