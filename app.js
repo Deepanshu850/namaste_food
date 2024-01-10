@@ -63,15 +63,15 @@ const styleCard = {
 }
 
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
 
     return (
         <div className="res-card" style={styleCard}>
             <img className="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/x4uyxvihmg8qa3pddkgf" />
-            <h3>meghna foods</h3>
-            <h4>Biryani,North India,Asian</h4>
-            <h4>4.4 stars</h4>
-            <h4>30 minutes</h4>
+            <h3>{props.name}</h3>
+            <h4>{props.cusine}</h4>
+            <h4>{props.rating}</h4>
+            <h4>{props.time}</h4>
         </div>
     )
 
@@ -84,6 +84,9 @@ const Body = () => {
                 search </div>
             <div className="res-container">
 
+                <RestaurantCard name="meghna foods" cusine="Biryani,North India,Asian" rating="4.4 stars" time="34 min" />
+                <RestaurantCard name="kfc" cusine="Burger, chinese,fastfood" rating="4.8 stars" time="38 min" />
+                {/* <RestaurantCard />
                 <RestaurantCard />
                 <RestaurantCard />
                 <RestaurantCard />
@@ -95,10 +98,7 @@ const Body = () => {
                 <RestaurantCard />
                 <RestaurantCard />
                 <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
+                <RestaurantCard /> */}
 
 
             </div>
