@@ -1,3 +1,3 @@
 # notes 3
 
-* h
+* config driven ui = all ui will we confiq via data is called config criven ui

@@ -40,6 +40,72 @@ const heading = React.createElement("h1", { id: "heading" }, "Namaste Reacte"); 
 //         <h1> Namaste react  heading componenet function {text}</h1></>
 //     )
 // }
+
+const resObj = {
+    "id": "24140",
+    "name": "Domino's Pizza",
+    "cloudinaryImageId": "wjubgskamwdbwg67j0or",
+    "locality": "Sarojini Nagar",
+    "areaName": "Hauz Khas",
+    "costForTwo": "₹400 for two",
+    "cuisines": ["Pizzas", "Italian", "Desserts"],
+    "avgRating": 4.2,
+    "parentId": "2456",
+    "avgRatingString": "4.2",
+    "totalRatingsString": "10K+",
+    "sla": {
+        "deliveryTime": 25,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25 mins",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2024-01-11 02:59:00",
+        "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "header": "30% OFF",
+        "subHeader": "UPTO ₹75"
+    },
+    "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {},
+    "analytics": {
+        "context": "seo-data-00ddfe19-40bc-436d-a440-fea494438503"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/dominos-pizza-sarojini-nagar-hauz-khas-delhi-24140",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+};
+
+
 const Header = () => {
     return (
         <div className="header">
@@ -64,18 +130,23 @@ const styleCard = {
 
 
 const RestaurantCard = (props) => {
+    const { resData } = props;
 
     return (
         <div className="res-card" style={styleCard}>
-            <img className="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/x4uyxvihmg8qa3pddkgf" />
-            <h3>{props.name}</h3>
-            <h4>{props.cusine}</h4>
-            <h4>{props.rating}</h4>
-            <h4>{props.time}</h4>
+            <img className="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
+                + resData.cloudinaryImageId} />
+            <h3>{resData.name}</h3>
+            <h4>{resData.costForTwo}</h4>
+            <h4>{resData.cuisines.join(",")}</h4>
+            <h4>{resData.avgRating + " " + "stars"}</h4>
         </div>
     )
 
 }
+
+
+
 
 const Body = () => {
     return (
@@ -84,8 +155,8 @@ const Body = () => {
                 search </div>
             <div className="res-container">
 
-                <RestaurantCard name="meghna foods" cusine="Biryani,North India,Asian" rating="4.4 stars" time="34 min" />
-                <RestaurantCard name="kfc" cusine="Burger, chinese,fastfood" rating="4.8 stars" time="38 min" />
+                <RestaurantCard resData={resObj} />
+                {/* <RestaurantCard name="kfc" cusine="Burger, chinese,fastfood" rating="4.8 stars" time="38 min" /> */}
                 {/* <RestaurantCard />
                 <RestaurantCard />
                 <RestaurantCard />
