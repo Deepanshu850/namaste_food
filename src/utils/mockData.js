@@ -8,7 +8,7 @@ let resList = [
             "areaName": "Hauz Khas",
             "costForTwo": "₹400 for two",
             "cuisines": ["Pizzas", "Italian", "Desserts"],
-            "avgRating": 4.2,
+            "avgRating": 3.2,
             "parentId": "2456",
             "avgRatingString": "4.2",
             "totalRatingsString": "10K+",
@@ -155,9 +155,9 @@ let resList = [
                 "Burgers",
                 "American"
             ],
-            "avgRating": 4.3,
+            "avgRating": 3.3,
             "parentId": "166",
-            "avgRatingString": "4.3",
+            "avgRatingString": "3.3",
             "totalRatingsString": "10K+",
             "sla": {
                 "deliveryTime": 25,
@@ -231,9 +231,9 @@ let resList = [
                 "American",
                 "Fast Food"
             ],
-            "avgRating": 4.5,
+            "avgRating": 3.5,
             "parentId": "630",
-            "avgRatingString": "4.5",
+            "avgRatingString": "3.5",
             "totalRatingsString": "1K+",
             "sla": {
                 "deliveryTime": 23,
@@ -668,7 +668,7 @@ let resList = [
                 "Punjabi"
 
             ],
-            "avgRating": 4.3,
+            "avgRating": 3.3,
             "parentId": "7918",
             "avgRatingString": "4.3",
             "totalRatingsString": "1K+",

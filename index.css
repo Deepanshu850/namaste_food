@@ -41,3 +41,18 @@ font-size: 20px;
     display: flex;
     flex-wrap: wrap;
 }
+.filter-btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}
+.filter-btn:hover{
+    border-left-color: aqua;
+    border-right-color: yellow;
+    text-shadow: 0cap;
+    color: rgb(121, 91, 91);
+    border-radius: 1px solid black;
+    background-color: palevioletred;
+}
