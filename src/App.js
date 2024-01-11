@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './index.css';
+import Header from "./components/Header";  
+import '../index.css';
 // const heading = React.createElement("h1", {}, "  world   react");
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // order of file matter
@@ -785,24 +786,7 @@ console.log(resList[0].info.name);  // Output: Domino's Pizza
 
 
 
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src="https://img.freepik.com/premium-vector/online-food-app-icon-food-shop-location-logo-also-online-resturent-location-template_608547-155.jpg?w=2000" />
-            </div>
-            <div className="nav-item">
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-
-        </div>
-    )
-}
+ 
 const styleCard = {
     backgroundColor: "#f0f0f0"
 }
