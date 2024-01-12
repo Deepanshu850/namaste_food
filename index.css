@@ -80,3 +80,27 @@ font-size: 20px;
         border-radius: 1px solid black;
         background-color: palevioletred;
     }
+    .fiter{
+        display: flex;
+    }
+    .search-box{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    .search-bt{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    .search-bt:hover{
+        border-left-color: aqua;
+        border-right-color: yellow;
+        text-shadow: 0cap;
+        color: rgb(121, 91, 91);
+        border-radius: 1px solid black;
+        background-color: palevioletred;
+
+    }

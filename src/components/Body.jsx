@@ -42,13 +42,17 @@ const Body = () => {
     return (
         <div className="body">
             <div className="filter">
-                <button className="filter-btn" onClick={() => {
+                <div className="search">
+                    <input type="text" className="search-box" />
+                    <button className="search-bt">Search</button>
 
-                    const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4);
-                    setlistOfRestaurant(filteredList);
-                    // console.log(resList);
+                    <button className="filter-btn" onClick={() => {
 
-                }}>Top Rated Restraunt</button> </div>
+                        const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4);
+                        setlistOfRestaurant(filteredList);
+                        // console.log(resList);
+
+                    }}>Top Rated Restraunt</button> </div></div>
             <div className="res-container">
 
                 {
