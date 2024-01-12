@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 const Body = () => {
     const [listOfRestaurant, setlistOfRestaurant] = useState(resList)
     const [searchText, setSearchText] = useState("");
+    const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
     //use to create super power react variable
     //state variable - Super power stae variable
@@ -24,6 +25,7 @@ const Body = () => {
         const json = await data.json();
         console.log(json);
         setlistOfRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
     };
     if (listOfRestaurant.length === 0) {
@@ -55,7 +57,7 @@ const Body = () => {
                         // console.log(searchText);
 
                         const filteredRes = listOfRestaurant.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
-                        setlistOfRestaurant(filteredRes);
+                        setFilteredRestaurant(filteredRes);
 
 
 
@@ -71,7 +73,7 @@ const Body = () => {
             <div className="res-container">
 
                 {
-                    listOfRestaurant.map((restaurant) => (<RestaurantCard key={restaurant.info.id} resData={restaurant} />))
+                    filteredRestaurant.map((restaurant) => (<RestaurantCard key={restaurant.info.id} resData={restaurant} />))
                 }
 
 
