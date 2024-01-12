@@ -42,7 +42,7 @@ const Body = () => {
     return (
         <div className="body">
             <div className="filter">
-                <button className="filter-btn" onMouseOver={() => {
+                <button className="filter-btn" onClick={() => {
 
                     const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4);
                     setlistOfRestaurant(filteredList);
