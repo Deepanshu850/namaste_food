@@ -3,7 +3,10 @@ import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 const Body = () => {
-    const [listOfRestaurant, setlistOfRestaurant] = useState(resList)//use to create super power react variable
+    const [listOfRestaurant, setlistOfRestaurant] = useState(resList)
+    const [searchText, setSearchText] = useState("");
+
+    //use to create super power react variable
     //state variable - Super power stae variable
 
     // useEffect Hook for api call load (->render-> apicall-> Rerender)
@@ -43,8 +46,16 @@ const Body = () => {
         <div className="body">
             <div className="filter">
                 <div className="search">
-                    <input type="text" className="search-box" />
-                    <button className="search-bt">Search</button>
+                    <input type="text" onChange={(e) => {
+                        setSearchText(e.target.value);
+                    }} value={searchText} className="search-box" />
+                    <button className="search-bt" onClick={() => {
+                        //filter the restaurant cards and update the ui
+                        //search text
+                        console.log(searchText);
+
+
+                    }} >Search</button>
 
                     <button className="filter-btn" onClick={() => {
 
