@@ -27,7 +27,7 @@ const Body = () => {
 
     };
     if (listOfRestaurant.length === 0) {
-        return <>
+        return <div className="shim">
             <Shimmer></Shimmer>
             <Shimmer></Shimmer>
             <Shimmer></Shimmer>
@@ -36,7 +36,7 @@ const Body = () => {
             <Shimmer></Shimmer>
             <Shimmer></Shimmer>
             <Shimmer></Shimmer>
-            <Shimmer></Shimmer></>;
+            <Shimmer></Shimmer></div>
 
 
     }
@@ -52,7 +52,11 @@ const Body = () => {
                     <button className="search-bt" onClick={() => {
                         //filter the restaurant cards and update the ui
                         //search text
-                        console.log(searchText);
+                        // console.log(searchText);
+
+                        const filteredRes = listOfRestaurant.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                        setlistOfRestaurant(filteredRes);
+
 
 
                     }} >Search</button>
