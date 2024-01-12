@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 const Body = () => {
     const [listOfRestaurant, setlistOfRestaurant] = useState(resList)//use to create super power react variable
     //state variable - Super power stae variable
@@ -23,7 +24,17 @@ const Body = () => {
 
     };
     if (listOfRestaurant.length === 0) {
-        return <h1>loading</h1>;
+        return <>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer>
+            <Shimmer></Shimmer></>;
+
 
     }
 
