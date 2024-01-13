@@ -14,6 +14,9 @@ const Body = () => {
     //when we want to do things aftr the render wee use this hook
 
     // useEffect has callback function and dependency array ,array is empty mean we want to execute this hook only one time.
+
+    // if no dependency array useEffect called evevytime the componnet render n rerender
+    // if dependency array exmpty = []= useEffect is called on intial render (just once );
     useEffect(
         () => {
             fetchData();
