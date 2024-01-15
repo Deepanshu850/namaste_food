@@ -13,13 +13,13 @@ const RestaurantMenu = () => {
         console.log(json);
         setResInfo(json.data);
     };
-    if (resInfo === null) return <Shimmer />;
+    // if (resInfo === null) return <Shimmer />;
 
 
     return (
         <div className="menu">
-            <h1>{resInfo?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurantsname?.info?.name}</h1>
-            <h2>{resInfo?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurantsname?.info?.areaName}</h2>
+            {/* <h1>{resInfo.cards[4].card.card.gridElements.infoWithStyle.restaurants.info.areaName}</h1> */}
+            <h2>{ }</h2>
             <li>burger</li>
             <li>diet coke</li>
 
