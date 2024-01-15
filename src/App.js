@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import '../index.css';
 import Error from "./components/Error";
+import RestaurantMenu from "./components/RestaurantMenu";
 // const heading = React.createElement("h1", {}, "  world   react");
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // order of file matter
@@ -90,6 +91,10 @@ const appRouter = createBrowserRouter([
         }, {
             path: "/contact",
             element: <Contact />,
+        },
+        {
+            path: "/restaurants/:resId",
+            element: <RestaurantMenu />,
         },
         ],
         errorElement: <Error />,
