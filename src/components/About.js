@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
             <h1>About us Component</h1>
-            <User />
+            {/* <User /> */}
             <UserClass name="chinkiu" location="Chsandigargh" />
         </>
     )
