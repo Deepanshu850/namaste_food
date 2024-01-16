@@ -1,7 +1,12 @@
-const About = () =>{
-    return(
+import User from "./User";
+import UserClass from "./UserClass";
+
+const About = () => {
+    return (
         <>
-        <h1>About us Component</h1>
+            <h1>About us Component</h1>
+            <User />
+            <UserClass name="chinkiu" />
         </>
     )
 }
