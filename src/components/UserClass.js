@@ -8,7 +8,8 @@ class UserClass extends React.Component {
         this.state = {
             userInfo: {
                 name: "Dummy-name",
-                location: "Default"
+                location: "Default",
+
             },
         }
     }
@@ -30,7 +31,7 @@ class UserClass extends React.Component {
         return (<div className="user-card-class">
             <h1> {this.state.userInfo.name}</h1>
             <h2> {this.state.userInfo.location}</h2>
-
+            <img src={this.state.userInfo.avatar_url} />
             {/* <h1>Count:{this.state.count2}</h1> */}
 
             <h3>contact : 95998408734</h3>
