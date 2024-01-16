@@ -6,7 +6,7 @@ const About = () => {
         <>
             <h1>About us Component</h1>
             <User />
-            <UserClass name="chinkiu" />
+            <UserClass name="chinkiu" location="Chsandigargh" />
         </>
     )
 }
