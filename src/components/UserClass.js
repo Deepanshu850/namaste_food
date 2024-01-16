@@ -9,6 +9,10 @@ class UserClass extends React.Component {
             count: 0,
         }
     }
+    componentDidMount() {
+        // use for api call in class basesd  Components
+        // just like we use useeffect in functional based componenets
+    };
 
     render() {
         const { name, location } = this.props;
