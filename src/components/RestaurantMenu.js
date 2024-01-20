@@ -18,7 +18,7 @@ const RestaurantMenu = () => {
 
     return (
         <div className="menu">
-            {/* <h1>{resInfo.cards[4].card.card.gridElements.infoWithStyle.restaurants.info.areaName}</h1> */}
+            {<h1>{resInfo.cards[4].card.card.gridElements.infoWithStyle.restaurants.info.areaName}</h1>}
             <h2>{ }</h2>
             <li>burger</li>
             <li>diet coke</li>
