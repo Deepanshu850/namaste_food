@@ -32,9 +32,9 @@ const Body = () => {
         setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
     };
-      const onlineStatus = useOnlineStatus();
-if(onlineStatus===false)return <h1>looks like you are offline</h1>
-if(onlineStatus===true)return <h1>  you are online</h1>
+    const onlineStatus = useOnlineStatus();
+    if (onlineStatus === false) return <h1>looks like you are offline</h1>
+    // if(onlineStatus===true)return <h1>  you are online</h1>
 
     if (listOfRestaurant.length === 0) {
         return <div className="shim">
